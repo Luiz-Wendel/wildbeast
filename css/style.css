@@ -150,8 +150,6 @@ img {
   .sidenav {
     position: relative;
     overflow: auto;
-    -webkit-overflow-scrolling: touch;
-    -ms-overflow-style: -ms-autohiding-scrollbar;
   }
 
   .sidenav::after {

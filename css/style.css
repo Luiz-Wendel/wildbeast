@@ -101,6 +101,15 @@ img {
 
 .propagandas {
   grid-area: adds;
+  background: #fafbfc;
+  display: grid;
+  align-content: start;
+  padding: var(--gutter);
+  gap: var(--gutter);
+}
+
+.propaganda-item img {
+  border-radius: 5px;
 }
 
 .footer {

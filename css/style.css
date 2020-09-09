@@ -1,3 +1,7 @@
+:root {
+  --gutter: 30px;
+}
+
 body,
 p,
 h1,
@@ -39,7 +43,7 @@ img {
   display: grid;
   grid-template-columns: 1fr auto;
   align-items: center;
-  padding: 30px;
+  padding: var(--gutter);
 }
 
 .header nav ul {
@@ -62,14 +66,14 @@ img {
 }
 
 .header li + li {
-  margin-left: 30px;
+  margin-left: var(--gutter);
 }
 
 .logo {
   max-width: 200px;
 }
 
-.logo .sidenav {
+.sidenav {
   grid-area: sidenav;
 }
 

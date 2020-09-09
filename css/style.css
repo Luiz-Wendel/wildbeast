@@ -37,6 +37,28 @@ img {
     'footer footer footer';
 }
 
+@media (max-width: 1220px) {
+  .estrutura {
+    grid-template-areas:
+      'header header header'
+      'sidenav content content'
+      'sidenav adds adds'
+      'footer footer footer';
+  }
+}
+
+@media (max-width: 760px) {
+  .estrutura {
+    grid-template-columns: 100%;
+    grid-template-areas:
+      'header'
+      'sidenav'
+      'content'
+      'adds'
+      'footer';
+  }
+}
+
 .header {
   grid-area: header;
   background: linear-gradient(135deg, #8844ee, #b07dfb);

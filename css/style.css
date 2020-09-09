@@ -25,7 +25,9 @@ a {
 }
 
 img {
+  display: block;
   max-width: 100%;
+  border-radius: 5px;
 }
 
 .estrutura {
@@ -188,6 +190,16 @@ img {
   gap: var(--gutter);
 }
 
+@media (max-width: 600px) {
+  .content {
+    grid-template-columns: auto;
+  }
+
+  .content img {
+    justify-self: center;
+  }
+}
+
 .col-wide {
   grid-column: 1 / -1;
 }
@@ -305,10 +317,7 @@ p {
   align-content: start;
   padding: var(--gutter);
   gap: var(--gutter);
-}
-
-.propaganda-item img {
-  border-radius: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
 .footer {
